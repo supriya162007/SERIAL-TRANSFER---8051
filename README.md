@@ -17,11 +17,14 @@ Personal computer with Keil software
 TMOD=0X20;//TIMER 1,MODE 2 TH1=0XFA;
 SCON=0X50; TR1=1;
 while(1)
-{ SBUF='A';
+{ SBUF='S';
 while(TI==0); TI=0;
 }
 }
 ```
+**OUTPUT:**
+![WhatsApp Image 2025-11-12 at 18 48 53_d3748922](https://github.com/user-attachments/assets/a7fe7816-61c8-42e1-b28e-b770dac86abc)
+
 **(ii)	Serial port to Transfer a Message**
 ```
 #include<reg51.h> void main(void)
